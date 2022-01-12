@@ -52,6 +52,8 @@ function ButtonClickAction (zEvent) {
     var linkToAssets = "https://app.roll20.net/image_library/fetchorphanassets/true/";
     var regexp = new RegExp(imageRegExpInput.value);
     var deck_no = deckList.selectedIndex;
+    var link;
+    var name;
     
     // reads every page of the library till it finds an empty page
     for (var i = 1; ; i++) {
